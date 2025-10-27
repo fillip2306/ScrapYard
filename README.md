@@ -1,28 +1,29 @@
 # 🔧 Scrapyard Management System (Java + MySQL)
 
 Et konsollbasert administrasjonssystem for en bilopphugger / skraphandel.  
-Laget i Java med JDBC og MySQL som del av en eksamensoppgave / innlevering i programmering.
+Utviklet i Java med JDBC og MySQL som del av en **eksamensoppgave i objektorientert programmering**.
 
-Prosjektet lar deg importere data om skraphandlere og kjøretøy (fossilbil, elbil og motorsykkel), lagre dette i database, og hente ut informasjon gjennom ulike spørringer.
+Prosjektet lar brukeren importere data om skraphandlere og kjøretøy (fossilbil, elbil og motorsykkel), lagre data i en database, og hente ut informasjon gjennom ulike SQL-spørringer.
 
 ---
 
-## 🎯 Hva var målet med prosjektet?
+## 🎯 Formål med prosjektet
 
-Målet var å vise at jeg kan:
-- Strukturere kode med arv, abstrakte klasser og spesialiserte subklasser (`Vehicles` → `FossilCar`, `ElectricCar`, `MotorCycle`)
-- Koble Java til en ekte database med `JDBC`
-- Bruke `PreparedStatement` riktig (for å unngå SQL injection og for å sende inn parametere trygt)
-- Kjøre SELECT, INSERT, SUM og filtrering mot databasen
-- Lage et lite "system" med meny i konsollen som lar brukeren kjøre ulike operasjoner
+Prosjektet ble levert som eksamen, og skulle demonstrere praktisk forståelse av:
+- Strukturering av kode ved bruk av arv, abstrakte klasser og spesialiserte subklasser  
+  (`Vehicles` → `FossilCar`, `ElectricCar`, `MotorCycle`)
+- Oppkobling mellom Java og MySQL via **JDBC**
+- Korrekt bruk av **PreparedStatement** for sikker og effektiv databasekommunikasjon
+- Utførelse av **SELECT**, **INSERT**, **SUM** og filtrering mot databasen
+- Utvikling av et konsollbasert menysystem som gir brukeren enkel tilgang til funksjonaliteten
 
-Dette er ikke et ferdig produkt, men en faglig øving i objektorientert Java + database.
+Prosjektet representerer en eksamensbesvarelse, og fokuserer på å vise **praktisk anvendelse av objektorienterte prinsipper og databaseintegrasjon** i Java.
 
 ---
 
 ## 🧠 Funksjonalitet i programmet
 
-Når du kjører `Main`, starter programmet en meny (i `Program.run()`):
+Når `Main` kjøres, starter applikasjonen en meny (fra `Program.run()`):
 
 ```text
 --- Meny ---
